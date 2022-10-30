@@ -1,0 +1,24 @@
+! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://id:pw@github.com/hunmin815/Git-Automation.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+------------------------------------------------------------------------------------------
+hint: Updates were rejected because the remote contains work that you do
+힌트 : 원격에 수행된 작업이 포함되어 있어 당신의 업데이트가 거부 되었습니다.
+hint: not have locally. This is usually caused by another repository pushing
+힌트 : 로컬에 없어. 대게, 다른 레포지토리 푸싱으로 인해 발생합니다. (여기서 느낌이 빡!)
+hint: to the same ref. You may want to first integrate the remote changes
+힌트 : 참조 사항으로 당신은 먼저 원격에서 변경된 사항을 통합하세요. (빼박입니다.)
+hint: (e.g., 'git pull ...') before pushing again.
+힌트 : (git pull 이라던가..) 푸시 하시기 전에.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+힌트 : 더 자세한 내용은 'git push --help'의 'Note about fast-forwards'를 참고하세요.
+
+이런 오류가 발생하는 이유? 알고보니 기존데이터가 손실될 수 있어서 푸쉬를 막은 것이다.
+
+<해결방법>
+다시 git pull 주소
+git push 주소
